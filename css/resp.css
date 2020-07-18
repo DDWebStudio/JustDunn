@@ -7,9 +7,6 @@
     width: 40%;
     margin-bottom: 30px;
   }
-  .programs-list img {
-    min-height: 370px;
-  }
 }
 
 @media (max-width: 968px) {
@@ -127,9 +124,11 @@
   }
   .contact .left {
     width: 100%;
+    padding: 50px 0;
   }
   .contact .right {
     width: 100%;
+    padding: 50px 0;
   }
   .contact-form {
     width: 91%;
