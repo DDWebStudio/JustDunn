@@ -113,6 +113,9 @@
     -o-object-position: center;
        object-position: center;
   }
+  .programs-list-title {
+    min-height: unset;
+  }
   .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
