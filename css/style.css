@@ -752,6 +752,7 @@ header .menu-link:hover {
   font-size: 16px;
   color: #253c57;
   width: 100%;
+  resize: none;
 }
 
 .contact-form button {
@@ -794,6 +795,6 @@ header .menu-link:hover {
 }
 
 .contact .form-bottom input {
-  width: 48%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
