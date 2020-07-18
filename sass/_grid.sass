@@ -1,0 +1,35 @@
+@import 'fonts'
+
+*, *:after, *:before
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  outline: none
+
+a, a:focus, a:hover, a:link, a:active
+  text-decoration: none
+  color: inherit
+
+
+body
+  font-family: "Raleway", sans-serif
+  font-weight: 400
+  perspective: 1
+  transform-style: preserve-3d
+  text-rendering: optimizeLegibility
+
+html
+  scroll-behavior: smooth
+
+ul
+  list-style: none
+
+.container  
+  width: 76vw
+  margin: 0 auto
+  padding: 150px 0
+
+@media (max-width: 968px) 
+  .container
+    width: 91%
+    padding: 50px 0

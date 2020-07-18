@@ -1,0 +1,42 @@
+@media (max-width: 968px) 
+  header
+    .head
+      &-title
+        font-size: calc(40px + (60 + 60 * 0.7) * ((100vw - 320px) / 1920))
+        margin: 0 0 20px 0
+      &-subtitle
+        font-size: calc(26px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920))
+        margin: 0 0 20px 0
+
+
+@media (max-width: 767px) 
+  header
+    .logo
+      &-image
+        max-width: 150px
+    .menu
+      &-link
+        font-size: 16px
+
+
+
+@media screen and (max-width: 600px)
+  .accordion 
+    ul 
+      li 
+        height: 300px
+        padding-bottom: 50px
+        padding-top: 50px
+  .accordion 
+    height: auto
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover 
+    position: relative
+    display: table
+    table-layout: fixed
+    width: 100%
+    -webkit-transition: none
+    transition: none
+    
