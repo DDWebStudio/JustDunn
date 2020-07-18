@@ -7,6 +7,9 @@
     width: 40%;
     margin-bottom: 30px;
   }
+  .programs-list img {
+    min-height: 370px;
+  }
 }
 
 @media (max-width: 968px) {

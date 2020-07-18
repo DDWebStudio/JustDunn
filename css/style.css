@@ -618,13 +618,18 @@ header .menu-link:hover {
 
 .programs-list {
   background-color: #fff;
-  width: 20%;
+  width: 23%;
   color: #253c57;
   padding: 0 0 4vh 0;
 }
 
 .programs-list img {
   width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .programs-list-title {
