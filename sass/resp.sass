@@ -1,3 +1,11 @@
+@media (max-width: 1365px) 
+  .programs
+    &-wrapp
+      flex-wrap: wrap
+    &-list
+      width: 40%
+      margin-bottom: 30px
+
 @media (max-width: 968px) 
   header
     .head
@@ -8,6 +16,84 @@
         font-size: calc(26px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920))
         margin: 0 0 20px 0
 
+  .title
+    font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1920))
+
+  .about
+    &-program
+      &-maintitle
+        font-size: calc(30px + (30 + 30 * 0.7) * ((100vw - 320px) / 1920))
+
+  .me 
+    .container
+      width: 100%
+      padding: 0
+    &-top
+      flex-direction: column
+      padding-bottom: 0
+      .col
+        width: 100%
+    &-photo
+      height: 300px
+    &-about
+      width: 100% 
+      padding: 4vh 5vw
+      left: 0
+      top: 0
+    &-title
+      font-size: calc(28px + (37 + 37 * 0.7) * ((100vw - 320px) / 1920))
+    &-text
+      font-size: calc(16px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920))
+    &-parallax
+      position: relative
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 300px
+    &-bottom
+      .col
+        width: 100%
+        li
+          svg
+            min-width: 20px
+            padding-top: 0
+      &-text
+        font-size: 16px
+        line-height: 20px
+    &-one
+      padding: 4vh 5vw
+    &-two
+      padding: 4vh 5vw
+      margin: 0
+    &-three
+      padding: 4vh 5vw
+
+  .programs
+    padding: 50px 0
+    &-wrapp
+      flex-direction: column
+    &-list
+      width: 91%
+      margin: 0 auto
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+      img
+        max-height: 300px
+        object-fit: cover
+        object-position: center
+
+  .contact
+    flex-direction: column
+    .left 
+      width: 100%
+    .right
+      width: 100%
+    &-form
+      width: 91%
+
 
 @media (max-width: 767px) 
   header
@@ -17,10 +103,6 @@
     .menu
       &-link
         font-size: 16px
-
-
-
-@media screen and (max-width: 600px)
   .accordion 
     ul 
       li 

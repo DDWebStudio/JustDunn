@@ -101,7 +101,7 @@ header
         color: #18266b
 
 .title
-  font-size: 40px
+  font-size: calc(24px + 16 * (100vw / 1920))
   font-weight: 400
   text-transform: uppercase
   text-align: center
@@ -140,7 +140,7 @@ header
     -moz-animation: Gradient 5s ease infinite
     animation: Gradient 5s ease infinite
   &-maintitle
-    font-size: calc(26px + 34 * (100vw / 1920)
+    font-size: calc(30px + 30 * (100vw / 1920)
     font-weight: 400
     text-transform: uppercase
     text-align: center
@@ -280,8 +280,9 @@ header
       right: 0
       background-image: url('../image/me-bg.png')
       background-repeat: no-repeat
-      background-size: cover
-      background-position: top center
+      background-size: contain
+      background-position: center left
+      background-attachment: fixed
       z-index: -1
   &-about
     background-color: #c9d6f1
@@ -297,9 +298,9 @@ header
     color: #253c57
   &-title
     margin-bottom: 30px
-    font-size: 65px
+    font-size: calc(28px + 37 * ((100vw - 320px) / 1920))
   &-text
-    font-size: 26px
+    font-size: calc(16px + 10 * ((100vw - 320px) / 1920))
     margin-bottom: 4vh
     text-align: justify
     &:last-child 

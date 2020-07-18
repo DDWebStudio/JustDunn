@@ -1,3 +1,14 @@
+@media (max-width: 1365px) {
+  .programs-wrapp {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .programs-list {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 968px) {
   header .head-title {
     font-size: calc(40px + (60 + 60 * 0.7) * ((100vw - 320px) / 1920));
@@ -6,6 +17,110 @@
   header .head-subtitle {
     font-size: calc(26px + (34 + 34 * 0.7) * ((100vw - 320px) / 1920));
     margin: 0 0 20px 0;
+  }
+  .title {
+    font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .about-program-maintitle {
+    font-size: calc(30px + (30 + 30 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .me .container {
+    width: 100%;
+    padding: 0;
+  }
+  .me-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+  }
+  .me-top .col {
+    width: 100%;
+  }
+  .me-photo {
+    height: 300px;
+  }
+  .me-about {
+    width: 100%;
+    padding: 4vh 5vw;
+    left: 0;
+    top: 0;
+  }
+  .me-title {
+    font-size: calc(28px + (37 + 37 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .me-text {
+    font-size: calc(16px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .me-parallax {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+  }
+  .me-bottom .col {
+    width: 100%;
+  }
+  .me-bottom .col li svg {
+    min-width: 20px;
+    padding-top: 0;
+  }
+  .me-bottom-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .me-one {
+    padding: 4vh 5vw;
+  }
+  .me-two {
+    padding: 4vh 5vw;
+    margin: 0;
+  }
+  .me-three {
+    padding: 4vh 5vw;
+  }
+  .programs {
+    padding: 50px 0;
+  }
+  .programs-wrapp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .programs-list {
+    width: 91%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .programs-list:last-child {
+    margin-bottom: 0;
+  }
+  .programs-list img {
+    max-height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .left {
+    width: 100%;
+  }
+  .contact .right {
+    width: 100%;
+  }
+  .contact-form {
+    width: 91%;
   }
 }
 
@@ -16,9 +131,6 @@
   header .menu-link {
     font-size: 16px;
   }
-}
-
-@media screen and (max-width: 600px) {
   .accordion ul li {
     height: 300px;
     padding-bottom: 50px;
