@@ -206,7 +206,7 @@ header .menu-link:hover {
   background-image: url("../image/about-program-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   z-index: -1;
 }
 
