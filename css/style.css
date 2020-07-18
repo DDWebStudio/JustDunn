@@ -195,6 +195,21 @@ header .menu-link:hover {
   position: relative;
 }
 
+.about-program:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../image/about-program-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
 .about-program-container {
   padding: 150px 0 50px 0;
   background-color: #39404f;
