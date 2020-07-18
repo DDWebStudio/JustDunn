@@ -370,8 +370,22 @@ header
     z-index: 0
   
 .programs
-  background-image: linear-gradient(-76deg, #31394e 0%, #1e2538 33%, #111726 67%, #040f14 100%)
+  background-image: linear-gradient(-76deg, rgba(49, 57, 78, 0.9), rgba(30, 37, 56, 0.9), rgba(17, 23, 38, 0.9), rgba(4, 15, 20, 0.9))
+  position: relative
   padding: 150px 0
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-image: url('../image/programs/programs-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+    z-index: -1
   &:hover
     &-list
       img
