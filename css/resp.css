@@ -41,6 +41,10 @@
   .me-photo {
     height: 300px;
   }
+  .me-photo:before {
+    background-size: cover;
+    background-position: center;
+  }
   .me-about {
     width: 100%;
     padding: 4vh 5vw;
