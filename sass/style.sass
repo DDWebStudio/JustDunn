@@ -169,62 +169,56 @@ header
       background-repeat: no-repeat
       background-position: center center
       transition: all 500ms ease
-      div
+      .hide
         display: flex
         overflow: hidden
         width: 100%
+        margin: 0 auto
         flex-direction: column
         align-items: center
         cursor: default
-        a
-          display: block
-          width: 100%
-          position: relative
-          z-index: 3
-          display: flex
-          flex-direction: column
-          align-items: center
-          padding: 15px 20px
-          box-sizing: border-box
-          text-decoration: none
-          transition: all 200ms ease
-          text-align: center
-          cursor: default
-          p 
-            color: #fff
-            font-size: 16px
-            font-weight: 400
-            line-height: 30px
-            margin-bottom: 4vh
-        a * 
-          opacity: 0
-          margin: 0
-          width: 100%
-          text-overflow: ellipsis
-          position: relative
-          z-index: 5
-          white-space: wrap
-          overflow: hidden
-          -webkit-transform: translateX(-20px)
-          transform: translateX(-20px)
-          -webkit-transition: all 400ms ease
-          transition: all 400ms ease
-        .order_num 
-          color: rgba(33, 42, 49, -0.5)
-          -webkit-text-stroke-width: 1px
-          -webkit-text-stroke-color: white
-          max-width: 130px
-          display: flex
-          flex-direction: row
-          font-size: 100px
-          font-weight: 700
-        h3 
-          color: #ffffff
-          font-size: 18px
+      .accordion-text
+        display: block
+        width: 100%
+        position: relative
+        z-index: 3
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 15px 20px
+        box-sizing: border-box
+        text-decoration: none
+        transition: all 200ms ease
+        text-align: center
+        cursor: default
+        p
+          color: #fff
+          font-size: 16px
           font-weight: 400
-          line-height: 32px
-          opacity: .3
-          text-align: center
+          line-height: 30px
+          margin-bottom: 4vh
+      .accordion-text * 
+        opacity: 0
+        margin: 0
+        width: 100%
+        text-overflow: ellipsis
+        position: relative
+        z-index: 5
+        white-space: wrap
+        overflow: hidden
+        -webkit-transform: translateX(-20px)
+        transform: translateX(-20px)
+        -webkit-transition: all 400ms ease
+        transition: all 400ms ease
+      .order_num 
+        color: rgba(33, 42, 49, -0.5)
+        -webkit-text-stroke-width: 1px
+        -webkit-text-stroke-color: white
+        max-width: 130px
+        display: flex
+        flex-direction: row
+        font-size: 100px
+        font-weight: 700
 
 
 .accordion ul li
@@ -250,10 +244,10 @@ header
 .accordion ul:hover li:hover 
   width: 33%
 
-.accordion ul:hover li:hover a 
+.accordion ul:hover li:hover .accordion-text
   opacity: 1
 
-.accordion ul:hover li:hover a * 
+.accordion ul:hover li:hover .accordion-text * 
   opacity: 1
   -webkit-transform: translateX(0)
   transform: translateX(0)
@@ -328,8 +322,9 @@ header
         margin-bottom: 4vh
         &:last-child
           margin-bottom: 0
-        svg
+        img
           min-width: 23px
+          height: auto
           padding-top: 7px
     &-text
       font-size: 20px
@@ -423,8 +418,13 @@ header
         margin:  0 0 4vh 0
         &:last-child
           margin: 0
-        svg
+        img
           min-width: 20px
+          max-height: unset
+          object-fit: unset
+          object-position: unset
+          height: auto
+          width: 20px
     &-item
       font-size: 16px
       line-height: 24px
@@ -451,13 +451,15 @@ header
     margin: 0 auto
   .right
     padding: 150px 0
-    width: 60%
-  &-form
+    width: 60%  
+  form
     width: 50%  
     margin: 0 auto
     display: flex
     flex-direction: column
     align-items: center
+    p
+      width: 100%
     input
       padding: 10px 15px
       border: none
@@ -473,18 +475,8 @@ header
       font-size: 16px
       color: #253c57
       width: 100%
-      resize: none
-    button
-      color: #253c57
-      font-size: 24px
-      width: 100%
-      text-align: center
-      padding: 15px
-      border: none
-      background-color: transparent
-      cursor: pointer
-      &:hover
-        background-color: #c9d6f1
+      resize: none   
+    .contact-text
   .form
     &-top
       width: 100%
@@ -492,11 +484,36 @@ header
       justify-content: space-between
       input
         width: 48%
+      .contact-name
+        width: 100% 
+        input
+          width: 90%
+      .contact-last
+        width: 100% 
+        text-align: right
+        input
+          width: 90%
     &-bottom
       width: 100%
       display: flex
       justify-content: space-between
       input
         width: 100%
-
+      .contact-email
+        width: 100% 
+        input
+          width: 100%
+    &-btn
+      color: #253c57 !important
+      font-size: 24px !important
+      width: 100% !important
+      text-align: center !important
+      padding: 15px !important
+      border: none !important
+      background-color: transparent !important
+      cursor: pointer !important
+      text-transform: uppercase
+      &:hover
+        background-color: #c9d6f1 !important
+      
       

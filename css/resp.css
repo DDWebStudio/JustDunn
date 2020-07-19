@@ -43,7 +43,7 @@
   }
   .me-photo:before {
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-attachment: scroll;
   }
   .me-about {
@@ -71,7 +71,7 @@
   .me-bottom .col {
     width: 100%;
   }
-  .me-bottom .col li svg {
+  .me-bottom .col li img {
     min-width: 20px;
     padding-top: 0;
   }
@@ -130,7 +130,7 @@
     width: 100%;
     padding: 50px 0;
   }
-  .contact-form {
+  .contact form {
     width: 91%;
   }
 }
