@@ -89,6 +89,30 @@
   .me-three {
     padding: 4vh 5vw;
   }
+  .accordion ul li {
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .accordion {
+    height: auto;
+  }
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .accordion ul li .accordion-text * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
   .programs {
     padding: 50px 0;
   }
@@ -141,25 +165,6 @@
   }
   header .menu-link {
     font-size: 16px;
-  }
-  .accordion ul li {
-    height: 300px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
-  .accordion {
-    height: auto;
-  }
-  .accordion ul li,
-  .accordion ul li:hover,
-  .accordion ul:hover li,
-  .accordion ul:hover li:hover {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    -webkit-transition: none;
-    transition: none;
   }
 }
 /*# sourceMappingURL=resp.css.map */
